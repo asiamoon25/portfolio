@@ -17,13 +17,9 @@ const routes = [
           component:()=>import(/*webpackChunkName:"about"*/'../components/body/About')
         },
         {
-          path:'/portfolio',
+          path:'/study',
           component:()=>import(/*webpackChunkName:"portfolio"*/'../components/body/Portfolio')
         },
-        {
-          path:'/resume',
-          component:()=>import(/*webpackChunkName:"resume"*/'../components/body/Resume')
-        }
       ]
     }
 ]

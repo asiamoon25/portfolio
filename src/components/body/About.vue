@@ -1,8 +1,10 @@
 <template>
   <v-main>
-    <p>
-      ABOUT
-    </p>
+   <v-row>
+     <v-col>
+       <v-img src="../../assets/shsin.jpg"></v-img>
+     </v-col>
+   </v-row>
   </v-main>
 
 </template>

@@ -58,7 +58,7 @@ data:()=>({
   color: white;
 }
 #rowMargin{
-  margin-top: 500px;
+  margin-top: 400px;
 }
 
 </style>
