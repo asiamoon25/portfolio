@@ -28,6 +28,14 @@
                        caret-animation='blink'
             ></vue-typer>
               <br>
+            <v-btn
+                class="mt-7"
+                text
+                color="white"
+                @click="goAbout()"
+            >
+              살펴보기
+            </v-btn>
           </v-col>
         </v-row>
   </v-container>

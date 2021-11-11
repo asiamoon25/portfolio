@@ -43,7 +43,7 @@
 <script>
 export default {
     name : 'DefaultBody',
-    computed:{
+  computed:{
     show(){
       switch(this.$vuetify.breakpoint.name){
         case 'xs': return true
