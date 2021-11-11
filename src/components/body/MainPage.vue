@@ -1,5 +1,5 @@
 <template>
-<v-main
+<v-app
     id="mainPage"
 >
   <!-- 전체화면 방법 없을까? -->
@@ -14,25 +14,25 @@
               class="text-center"
               cols="12"
           >
-            <h1
-                class="text-h4 mb-4 color"
-            >
-              안녕하세요.
-            </h1>
-            <p class="color">
-              백엔드 개발자를 희망하는 정연상입니다.
-            </p>
-            <v-btn
-                text color="white"
-                @click="goAbout()"
-            >
-              살펴보기
-            </v-btn>
+
+            <vue-typer class="display-3 vue-typer .custom.char.typed"
+                       :text='["안녕하세요.","정연상의", "포트폴리오 입니다."]'
+                       :repeat='Infinity'
+                       initial-action='typing'
+                       :pre-type-delay='100'
+                       :type-delay='150'
+                       :pre-erase-delay='1500'
+                       :erase-delay='150'
+                       erase-style='backspace'
+                       :erase-on-complete='false'
+                       caret-animation='blink'
+            ></vue-typer>
+              <br>
           </v-col>
         </v-row>
   </v-container>
 
-</v-main>
+</v-app>
 
 </template>
 
@@ -50,15 +50,14 @@ data:()=>({
 </script>
 
 <style>
-#mainPage{
-    background: url("../../assets/cafeCamera.jpeg") no-repeat center;
-}
-.color{
-  font-weight: bolder;
-  color: white;
+#mainPage {
+  background: url("../../assets/ImNan.jpg") center;
 }
 #rowMargin{
   margin-top: 400px;
+}
+.vue-typer .custom.char.typed {
+  color: white;
 }
 
 </style>

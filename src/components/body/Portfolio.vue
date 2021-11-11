@@ -1,12 +1,15 @@
 <template>
   <v-main>
-    <p>
-      PORTFOLIO
-    </p>
+  <div>
+
+      asdfasdfasdfasdfasdfasdfasdasdfas
+
+  </div>
   </v-main>
 </template>
 <script>
 export default{
+  name:'PortfolioComponent',
   data:()=>({
 
   })

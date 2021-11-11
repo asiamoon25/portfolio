@@ -10,15 +10,15 @@ const routes = [
       children:[
         {
           path:'/',
-          component:()=>import(/* webpackChunkName:"main-main"*/'../components/body/MainPage')
+          component:()=>import(/* webpackChunkName:"main-main"*/'../components/body/MainPage'),
         },
         {
           path:'/about',
-          component:()=>import(/*webpackChunkName:"about"*/'../components/body/About')
+          component:()=>import(/*webpackChunkName:"about"*/'../components/body/About'),
         },
         {
           path:'/study',
-          component:()=>import(/*webpackChunkName:"portfolio"*/'../components/body/Portfolio')
+          component:()=>import(/*webpackChunkName:"portfolio"*/'../components/body/Portfolio'),
         },
       ]
     }
