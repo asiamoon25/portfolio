@@ -6,13 +6,13 @@ import vuetify from './plugins/vuetify'
 import VueTyperPlugin from 'vue-typer'
 import VueScrollTo from 'vue-scrollto'
 import VuePageTransition from 'vue-page-transition'
-
-
+import { VueperSlides, VueperSlide } from 'vueperslides'
+import 'vueperslides/dist/vueperslides.css'
 
 Vue.use(VuePageTransition)
 Vue.use(VueScrollTo,{
   container:"body",
-  duration: 500,
+  duration: 400,
   easing: "ease",
   offset: -80,
   force: true,

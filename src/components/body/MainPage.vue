@@ -2,16 +2,16 @@
 <v-app
     id="mainPage"
 >
-  <!-- 전체화면 방법 없을까? -->
   <v-container>
 
         <v-row
             align="center"
             justify="center"
             id="rowMargin"
+
         >
           <v-col
-              class="text-center"
+              class="text-center mt-10"
               cols="12"
           >
 
@@ -45,10 +45,15 @@
 </template>
 
 <script>
+import { VueperSlides, VueperSlide } from 'vueperslides'
 export default {
 data:()=>({
 
 }),
+  components:{
+    VueperSlide,
+    VueperSlides
+  },
   methods:{
   goAbout(){
     this.$router.push("/about").catch(()=>{});
@@ -59,13 +64,19 @@ data:()=>({
 
 <style>
 #mainPage {
-  background: url("../../assets/ImNan.jpg") center;
+  background: url("../../assets/keyboard.jpg") no-repeat center;
+  background-size: cover;
+  font-family: "Open Sans",serif
 }
 #rowMargin{
+  font-family: 'Montserrat',sans-serif;
+  font-weight: bold;
   margin-top: 400px;
 }
 .vue-typer .custom.char.typed {
   color: white;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: bold;
 }
 
 </style>
