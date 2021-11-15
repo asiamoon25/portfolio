@@ -51,7 +51,7 @@
             <p>2013.03<span class="ml-3">경복고등학교 입학</span></p>
             <p>2016.02<span class="ml-3">경복고등학교 졸업</span></p>
             <p>2018.04<span class="ml-3">芝浦工業大学 入学</span></p>
-            <p>2019.06<span class="ml-3">芝浦工業大学 １年修了</span></p>
+            <p>2019.06<span class="ml-3">芝浦工業大学 土木工学科１年修了</span></p>
           </v-col>
         </v-row><!--학력 끝 -->
         <v-row class="mt-4"><!--캐리어 부분 -->
