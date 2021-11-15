@@ -66,7 +66,7 @@ data:()=>({
 #mainPage {
   background: url("../../assets/keyboard.jpg") no-repeat center;
   background-size: cover;
-  font-family: "Open Sans",serif
+  font-family: "Montserrat",sans-serif;
 }
 #rowMargin{
   font-family: 'Montserrat',sans-serif;

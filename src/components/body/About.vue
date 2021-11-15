@@ -4,7 +4,7 @@
       <v-col cols="4"><!-- 왼쪽화면 부분 -->
         <v-row justify="center"><!-- 이미지 자리 -->
           <v-col cols="4">
-            <img style="width: 380px; height: 500px;" src="../../assets/ImNan.jpg" alt="profile"/>
+            <img style="width: 380px; height: 500px;" src="../../assets/chikatetsu2.jpeg" alt="profile"/>
             <div><v-icon class="mb-2 mr-1">mdi-email</v-icon><span>wjddustkd45@gmail.com</span></div>
             <div><v-icon class="mb-2 mr-1">mdi-cellphone</v-icon><span>010-8804-1072</span></div>
           </v-col>
@@ -163,11 +163,4 @@ export default{
   font-family: 'Montserrat',sans-serif;
   font-weight: bold;
 }
-.name1{
-
-}
-
 </style>
-
-
-<!--OPEN-SOURCE-GPLV3-LICENSE-->

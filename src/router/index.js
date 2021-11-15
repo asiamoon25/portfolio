@@ -17,8 +17,19 @@ const routes = [
           component:()=>import(/*webpackChunkName:"about"*/'../components/body/About'),
         },
         {
-          path:'/study',
-          component:()=>import(/*webpackChunkName:"portfolio"*/'../components/body/Portfolio'),
+          path:'/project',
+          component:()=>import(/*webpackChunkName:"portfolio"*/'../components/body/Project'),
+          children:[
+            {
+              path:'/personal',
+              component:()=>import(/*webpackChunkName:"personal"*/'../components/body/Personal')
+            },
+            {
+              path: '/company',
+              component:()=>import(/*webpackChunkName:"company"*/'../components/body/Company')
+            }
+          ]
+
         },
       ]
     }

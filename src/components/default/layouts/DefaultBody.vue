@@ -27,9 +27,9 @@
           text
           v-if="!show"
           link
-          to="/study"
+          to="/project"
       >
-        PORTFOLIO
+        PROJECT
       </v-btn>
 
     </v-app-bar>
