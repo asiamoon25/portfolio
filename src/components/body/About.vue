@@ -106,6 +106,11 @@
           </v-col>
           <v-col cols="2">
             <v-card>
+              <v-img src="@/assets/springbootlogo.png" style="height: 152px;"></v-img>
+            </v-card>
+          </v-col>
+          <v-col cols="2">
+            <v-card>
               <v-img src="@/assets/angular.png"></v-img>
             </v-card>
           </v-col>
