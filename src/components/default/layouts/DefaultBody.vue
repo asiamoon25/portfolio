@@ -3,6 +3,7 @@
     <v-app-bar
         id="header"
         app
+        v-if="!show"
     >
       <v-app-bar-nav-icon
           v-if="show"

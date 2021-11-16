@@ -21,6 +21,10 @@ const routes = [
           component:()=>import(/*webpackChunkName:"portfolio"*/'../components/body/Project'),
           children:[
             {
+              path:'/',
+              component:()=>import(/*webpackChunkName:"personal"*/'../components/body/Personal')
+            },
+            {
               path:'/personal',
               component:()=>import(/*webpackChunkName:"personal"*/'../components/body/Personal')
             },

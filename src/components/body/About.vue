@@ -1,7 +1,7 @@
 <template>
   <v-main class="fill-height mt-16" id="about">
     <v-row class="justify-center">
-      <v-col cols="4"><!-- 왼쪽화면 부분 -->
+      <v-col id="photo" :cols="show"><!-- 왼쪽화면 부분 -->
         <v-row justify="center"><!-- 이미지 자리 -->
           <v-col cols="4">
             <img style="width: 380px; height: 500px;" src="../../assets/chikatetsu2.jpeg" alt="profile"/>
@@ -10,7 +10,7 @@
           </v-col>
         </v-row><!--이미지 자리 끝 -->
       </v-col><!--왼쪽 화면 부분 끝 -->
-      <v-col cols="5"><!-- 화면중 오른쪽 절반 부분 -->
+      <v-col :cols="show"><!-- 화면중 오른쪽 절반 부분 -->
         <v-row class="font-weight-black" justify="center"><!-- 이름 성별 나이 부분 -->
           <v-col cols="4" class="text-h5">
             Name
@@ -106,7 +106,7 @@
           </v-col>
           <v-col cols="2">
             <v-card>
-              <v-img src="@/assets/springbootlogo.png" style="height: 152px;"></v-img>
+              <v-img src="@/assets/springbootlogo.png"></v-img>
             </v-card>
           </v-col>
           <v-col cols="2">
@@ -159,6 +159,18 @@ export default{
   name:'AboutComponent',
   data:()=>({
   }),
+  computed:{
+    show(){
+      switch (this.$vuetify.breakpoint.name){
+        case 'xs': console.log(this.$vuetify.breakpoint.name); return 12
+        case 'sm': console.log(this.$vuetify.breakpoint.name); return 12
+        case 'md': console.log(this.$vuetify.breakpoint.name); return 7
+        case 'lg': console.log(this.$vuetify.breakpoint.name); return 6
+        case 'xl': console.log(this.$vuetify.breakpoint.name); return 5
+      }
+    }
+
+  }
 
 }
 
