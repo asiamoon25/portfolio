@@ -111,11 +111,6 @@
           </v-col>
           <v-col cols="2">
             <v-card>
-              <v-img src="@/assets/angular.png"></v-img>
-            </v-card>
-          </v-col>
-          <v-col cols="2">
-            <v-card>
               <v-img src="@/assets/vue.png"></v-img>
             </v-card>
           </v-col>
@@ -132,11 +127,6 @@
           <v-col cols="2">
             <v-card>
               <v-img src="@/assets/oraclelogo.png"></v-img>
-            </v-card>
-          </v-col>
-          <v-col cols="2">
-            <v-card>
-              <v-img src="@/assets/mysqllogo.png"></v-img>
             </v-card>
           </v-col>
           <v-col cols="2">
