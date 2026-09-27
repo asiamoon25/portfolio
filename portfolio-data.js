@@ -1,6 +1,38 @@
 // 새 작업물은 이 배열에 객체를 하나 더 추가하세요. 작성 방법은 README.md에 있습니다.
 window.PORTFOLIO_PROJECTS = [
   {
+    id: 'food-safety-api',
+    badge: '개인 제작 데모 · 공개용 가상 화면',
+    title: '음식점 정보 정기 수집',
+    summary: '식품안전나라 공개 API의 신규·변경 정보를 날짜별 Excel로 정리하고 결과를 이메일로 알리는 데모입니다.',
+    priceLabel: '예상 가격',
+    price: '[미정]',
+    intro: 'I1200·I2861을 조회해 13열 Excel을 만들었습니다. 반복 예약 실행과 성공·실패 테스트 메일 수신까지 확인했어요.',
+    technologies: 'Python · 식품안전나라 Open API · openpyxl · Windows 작업 스케줄러 · Gmail SMTP',
+    gallery: [
+      { src: 'food-api-excel.png', alt: '가상 업소 정보로 재구성한 날짜별 Excel 결과 화면' },
+      { src: 'food-api-success-email.png', alt: '성공 메일과 Excel 첨부를 재구성한 화면' },
+      { src: 'food-api-failure-email.png', alt: '테스트 유도 실패 메일과 오류 로그 첨부를 재구성한 화면' }
+    ],
+    changes: [
+      '신규 정보(I1200)와 변경 이력(I2861)을 기준일로 조회하고, 같은 날짜의 중복 수집을 막았습니다.',
+      '두 API 중 한쪽이라도 조회에 실패하면 불완전한 Excel을 보내지 않고 오류 로그를 남깁니다.',
+      '주말 결과는 보관했다가 월요일에 묶어 보내도록 구성했습니다.'
+    ],
+    metrics: [
+      { label: '실제 API 검수', value: '신규 6행 · 변경 0행' },
+      { label: '메일 검수', value: '성공·실패 각 1통 수신' },
+      { label: '예약 검수', value: '5분 반복 실행 확인' }
+    ],
+    video: null,
+    detailImage: { src: 'food-api-excel.png', alt: '13열 Excel 중 앞쪽 7열을 가상 데이터로 재구성한 화면' },
+    notices: [
+      '이 데모는 실제 고객 납품 사례가 아닙니다.',
+      '공개 화면의 업소 정보와 메일 내용은 가상 데이터로 재구성했습니다. 실제 API 결과와 인증 정보는 공개하지 않습니다.',
+      '오전 9시 정기 작업의 첫 실행과 월요일 묶음 발송은 확인 중입니다.'
+    ]
+  },
+  {
     id: 'seasonal-order',
     badge: '개인 제작 데모 · 가상 데이터',
     title: '시즌 단가·발주 계산',
